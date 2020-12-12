@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/math.min.js" type="text/javascript"></script>
+        <script src="js/struct/num.js"></script>
+        <script src="js/methods/LagrangeMethod.js"></script>
+        <script src="js/methods/NewtonMethod.js"></script>
+        <script src="js/methods/NewtonNodesMethod.js"></script>
+        <script src="js/methods/SplineMethod.js"></script>
+        <script src="js/methods/MinimumSquares.js"></script>
+        <script src="js/ui/UI.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/main.js"></script>
+        <title>Title</title>
+    </head>
+    <body>
+        <div id="grid">
+            <div id="X">
+
+            </div>
+            <div id="Y">
+
+            </div>
+        </div><br>
+        <input type="text" id="nodeSize" placeholder="Количество узлов">
+        <input type="button" id="createGridBut" value="Создать узлы">
+        <input type="button" id="calculateBut" value="Рассчитать">
+        <select id="methodList">
+            <option selected disabled>Выберите метод</option>
+            <option value="LagrangeMethod">Многочлен Лагранжа</option>
+            <option value="NewtonMethod">Многочлен Ньютона</option>
+            <option value="NewtonNodesMethod">Многочлен Ньютона - узлы</option>
+            <option value="SplineMethod">Метод сплайна</option>
+            <option value="MinimumSquares">Метод минимальных квадратов</option>
+        </select><br>
+        <span>Опциональные данные:</span>
+        <div id="additionalElem"></div>
+    </body>
+</html>
