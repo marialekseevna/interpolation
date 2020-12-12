@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/css.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/math.min.js" type="text/javascript"></script>
         <script src="js/struct/num.js"></script>
@@ -14,7 +14,7 @@
         <script src="js/ui/UI.js"></script>
         <script src="js/app.js"></script>
         <script src="js/main.js"></script>
-        <title>Title</title>
+        <title>Интерполяция и приближение функций</title>
     </head>
     <body>
         <div id="grid">
@@ -25,9 +25,9 @@
 
             </div>
         </div><br>
-        <input type="text" id="nodeSize" placeholder="Количество узлов">
-        <input type="button" id="createGridBut" value="Создать узлы">
-        <input type="button" id="calculateBut" value="Рассчитать">
+        <div class="field">
+            <input type="text" id="nodeSize" placeholder="Количество узлов">
+            <input type="button" id="createGridBut" value="Создать узлы">
         <select id="methodList">
             <option selected disabled>Выберите метод</option>
             <option value="LagrangeMethod">Многочлен Лагранжа</option>
@@ -38,5 +38,7 @@
         </select><br>
         <span>Опциональные данные:</span>
         <div id="additionalElem"></div>
+        <input type="button" id="calculateBut" value="Получить решение">
+        </div>
     </body>
 </html>
