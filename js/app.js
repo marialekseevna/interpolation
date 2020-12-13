@@ -48,7 +48,8 @@ class App {
         if (results.results == null) {
             //console.log(result.error);
         } else {
-            console.log(results.results);
+            alert("Ответ: " + results.results);
+            //console.log(results.results);
         }
     }
 
