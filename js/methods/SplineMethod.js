@@ -3,7 +3,8 @@ class SplineMethod {
         this.data = options.data;
     }
 
-    doMethod(options) {ц
+    doMethod(options) {
+        const grid = this.data.grid;
         const x = options.additionals.x;
         let a = [];
         let b = [];
